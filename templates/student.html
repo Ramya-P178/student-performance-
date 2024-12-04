@@ -1,0 +1,52 @@
+<!-- student.html -->
+{% extends 'base.html' %}
+
+{% block title %}Student Information - Student Performance Tracker{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Student Information</h1>
+        <h2>Student Marks Overview</h2>
+        <table border="1" style="width: 80%; margin: auto;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Mathematics</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Science</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>History</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Mathematics</td>
+                    <td>78</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Science</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>History</td>
+                    <td>79</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+{% endblock %}

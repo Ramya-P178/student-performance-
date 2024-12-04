@@ -1,0 +1,31 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Student Performance Tracker{% endblock %}</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul style="list-style-type: none; display: flex; justify-content: space-around; padding: 10px; background-color: #333;">
+                <li><a href="/" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="/about" style="color: white; text-decoration: none;">About</a></li>
+                <li><a href="/student" style="color: white; text-decoration: none;">Student Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align: center; padding: 20px;">&copy; 2024 Student Performance Tracker</p>
+    </footer>
+</body>
+</html>
